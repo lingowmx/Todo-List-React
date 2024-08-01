@@ -1,0 +1,15 @@
+.create-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    font-size: 36px;
+    margin: 40px;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}

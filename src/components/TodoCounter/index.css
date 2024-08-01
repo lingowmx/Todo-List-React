@@ -1,0 +1,19 @@
+.main-section{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.icon-left{
+    text-align: left;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.my-day-planner{
+    margin: 16px 0 4px;
+}
+
+.today{
+    margin-bottom: 12px;
+}
