@@ -1,0 +1,12 @@
+.icon-container{
+    width: 32px;
+    height: 32px;
+
+}
+
+.icon-container-delete:hover .icon-svg{
+    fill: red;
+}
+.icon-container-check:hover .icon-svg{
+    fill: green;
+}

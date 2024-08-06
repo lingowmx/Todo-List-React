@@ -1,3 +1,7 @@
+
+
+
+
 .items{
     width: 320px;
     height: 50px;
@@ -9,22 +13,25 @@
     padding: 0 8px;
     align-items: center;
     margin-bottom: 2px;
+    position: relative;
 }
 .icon{
     cursor: pointer;
     font-size: 20px;
     display: flex;
 }
-.icon-check:hover{
+
+
+/* .icon-check:hover{
     color: rgb(51, 194, 51);
 }
 .icon-check--active{
     color: rgb(51, 194, 51);
 }
-
-.icon-close:hover{
+.icon-delete{
     color: red;
-}
+} */
+
 
 .todo-item-complete{
     text-decoration: line-through;
