@@ -5,6 +5,7 @@
     border: none;
     font-size: 36px;
     margin: 40px;
+    z-index: 1;
 }
 
 .button-container{
@@ -12,4 +13,5 @@
     display: flex;
     justify-content: end;
     cursor: pointer;
+    
 }

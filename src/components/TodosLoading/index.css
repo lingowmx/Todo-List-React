@@ -1,0 +1,52 @@
+.todoLoading-container{
+    width: 320px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.todoLoading-complete{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    position: absolute;
+    left: 4px;
+}
+
+/* .todoLoading-text{
+
+} */
+
+.todoLoading-delete{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    position: absolute;
+    right: -8px;
+    bottom: 24px;
+
+}
+
+.todoLoading-container,
+.todoLoading-complete,
+.todoLoading-delete{
+    background: rgb(179,193,204);
+    background: linear-gradient(90deg, rgba(179,193,204,0.9850533963585434) 34%, rgba(249,249,249,1) 100%);
+    animation: loadingAnimation 3s ease-in-out infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes loadingAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

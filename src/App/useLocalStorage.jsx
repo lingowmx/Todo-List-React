@@ -1,5 +1,6 @@
 import React from "react";
 
+//El itemName solo es una nueva variable que remplaza a todos los todos_V1
 export const useLocalStorage = (itemName, initialValue) => {
   const [item, setItem] = React.useState(initialValue);
   const [loading, setLoading] = React.useState(true);
@@ -8,11 +9,11 @@ export const useLocalStorage = (itemName, initialValue) => {
   React.useEffect(() => {
     setTimeout(() => {
       try {
-        const localStorageItem = localStorage.getItem("itemName");
+        const localStorageItem = localStorage.getItem(itemName);
       
         let parsedItem;
         if (!localStorageItem) {
-          localStorage.setItem("itemName", JSON.stringify(initialValue));
+          localStorage.setItem(itemName, JSON.stringify(initialValue));
           parsedItem = initialValue;
         } else {
           parsedItem = JSON.parse(localStorageItem);
@@ -27,9 +28,11 @@ export const useLocalStorage = (itemName, initialValue) => {
   },[]);
   // let parsedTodos = JSON.parse(localStorageTodos)
   const saveItem = (newItem) => {
-    localStorage.setItem("itemName", JSON.stringify(newItem));
+    localStorage.setItem(itemName, JSON.stringify(newItem));
     setItem(newItem);
   };
+
+  console.log(item);
   return {
     item,
     saveItem,
